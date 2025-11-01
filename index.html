@@ -5,86 +5,176 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Course Landing Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <div class="container my-5">
-    <div class="container my-5">
-  <div class="row align-items-center bg-light rounded-4 shadow-sm p-4">
-    
-    <div class="col-md-5 text-center mb-4 mb-md-0">
-      <img src="photo.jpg" alt="Profile Photo" class="img-fluid rounded-circle shadow-sm mb-2" style="width:180px; height:180px; object-fit:cover;">
-      <p class="fs-5 mt-2 text-secondary">
-        <strong>Kumarjit Das</strong><br>
-        B.Tech, Dr. Sudhir Chandra Sur Institute.
-      </p>
+
+    <!-- Profile Section -->
+    <div class="row align-items-center bg-light rounded-4 shadow-sm p-4 mb-5">
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <img src="photo.jpg" alt="Profile Photo" class="img-fluid rounded-circle shadow-sm mb-2" style="width:180px; height:180px; object-fit:cover;">
+        <p class="fs-5 mt-2 text-secondary">
+          <strong>Kumarjit Das</strong><br>
+          B.Tech, Dr. Sudhir Chandra Sur Institute
+        </p>
+      </div>
+
+      <div class="col-md-7">
+        <h2 class="fw-bold text-primary mb-3">About Me</h2>
+        <p class="fs-5 text-dark mb-3">
+          Tech enthusiast with a passion for web, cloud, and automation.
+        </p>
+        <p class="mb-0 fs-6"><strong>📞</strong> +91 9875651645</p>
+        <p class="mb-0 fs-6"><strong>📧</strong> daskumarjit2004@gmail.com</p>
+      </div>
     </div>
-
-    <div class="col-md-7">
-      <h2 class="fw-bold text-primary mb-3">About Me</h2>
-      <p class="fs-5 text-dark mb-3">
-        Tech enthusiast with a passion for web, cloud, and automation.
-      </p>
-      <p class="mb-0 fs-6"><strong>📞</strong> +91 9875651645</p>
-      <p class="mb-0 fs-6"><strong>📧</strong> daskumarjit2004@gmail.com</p>
-    </div>
-
-  </div>
-</div>
-
     <div class="bg-white p-4 rounded-4 shadow-sm">
-  <h1 class="text-center fw-bold text-primary mb-4">Courses</h1>
+      <h1 class="text-center fw-bold text-primary mb-4">Courses</h1>
 
-  <div class="course-row d-flex justify-content-between align-items-center border-bottom py-2">
-    <h5 class="fw-semibold mb-0">MERN Stack Development</h5>
-    <div class="text-end">
-      <span class="text-dark fw-semibold me-3">₹10,000</span>
-      <span class="text-secondary fw-semibold">6 Months</span>
+      <div class="accordion accordion-flush" id="accordionCourses">
+        <div class="accordion-item border rounded-3 shadow-sm mb-3">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold text-primary bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mern" aria-expanded="false" aria-controls="mern">
+              MERN Stack Development Course
+            </button>
+          </h2>
+          <div id="mern" class="accordion-collapse collapse" data-bs-parent="#accordionCourses">
+            <div class="accordion-body">
+              <div class="mb-3">
+                <span class="badge bg-info text-dark me-2"><i class="bi bi-clock-history"></i> Duration: 5-6 Months</span>
+                <span class="badge bg-success"><i class="bi bi-currency-rupee"></i> Fee: ₹10,000</span>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">1. HTML, CSS, and JavaScript Fundamentals</li>
+                <li class="list-group-item">2. React.js with Bootstrap</li>
+                <li class="list-group-item">3. Node.js and Express.js</li>
+                <li class="list-group-item">4. Understanding REST APIs and Backend Fundamentals</li>
+                <li class="list-group-item">5. MongoDB Integration with Web Applications</li>
+                <li class="list-group-item">6. Git & GitHub: Push, Pull, Branching</li>
+                <li class="list-group-item">7. Hands-on Project and prepare CV</li>
+                <li class="list-group-item">8. Deploy MERN Applications on AWS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border rounded-3 shadow-sm mb-3">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold text-primary bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#phpmysql" aria-expanded="false" aria-controls="phpmysql">
+              Full Stack Development with PHP & MySQL
+            </button>
+          </h2>
+          <div id="phpmysql" class="accordion-collapse collapse" data-bs-parent="#accordionCourses">
+            <div class="accordion-body">
+              <div class="mb-3">
+                <span class="badge bg-info text-dark me-2"><i class="bi bi-clock-history"></i> Duration: 3-4 Months</span>
+                <span class="badge bg-success"><i class="bi bi-currency-rupee"></i> Fee: ₹8,000</span>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">1. HTML, CSS, and JavaScript</li>
+                <li class="list-group-item">2. REST APIs & Backend Fundamentals</li>
+                <li class="list-group-item">3. Introduction to PHP (Basics Covered)</li>
+                <li class="list-group-item">4. Conditional Statements</li>
+                <li class="list-group-item">5. Loops</li>
+                <li class="list-group-item">6. Functions</li>
+                <li class="list-group-item">7. Arrays and Strings</li>
+                <li class="list-group-item">8. Global & Superglobal Variables</li>
+                <li class="list-group-item">9. Cookies and Sessions</li>
+                <li class="list-group-item">10. File Handling</li>
+                <li class="list-group-item">11. Json Handling</li>
+                <li class="list-group-item">12. MYSQL Integration with Web Applications(CRUD oprations)</li>
+                <li class="list-group-item">13. Implement Authentication</li>
+                <li class="list-group-item">14. Hands-on Project</li>
+                <li class="list-group-item">15. Git & GitHub: Push, Pull, Branching</li>
+                <li class="list-group-item">16. Learn Object orianted programming</li>
+                <li class="list-group-item">17. Install and setup xampp.</li>
+                <li class="list-group-item">18. prepare CV</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border rounded-3 shadow-sm mb-3">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold text-primary bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#python" aria-expanded="false" aria-controls="python">
+              Python Programming
+            </button>
+          </h2>
+          <div id="python" class="accordion-collapse collapse" data-bs-parent="#accordionCourses">
+            <div class="accordion-body">
+              <span class="badge bg-info text-dark me-2"><i class="bi bi-clock-history"></i> Duration: 3-4 Months</span>
+              <span class="badge bg-success"><i class="bi bi-currency-rupee"></i> Fee: ₹4,000</span>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">1. Introduction to python(Basic Covered)</li>
+                <li class="list-group-item">2. conditional statement</li>
+                <li class="list-group-item">3. Loops</li>
+                <li class="list-group-item">4. Strings</li>
+                <li class="list-group-item">5. List</li>
+                <li class="list-group-item">6. Tuple</li>
+                <li class="list-group-item">7. Set</li>
+                <li class="list-group-item">8. Dictionary</li>
+                <li class="list-group-item">9. Function & Higher Order function</li>
+                <li class="list-group-item">10. Comprehension</li>
+                <li class="list-group-item">11. OOPs</li>
+                <li class="list-group-item">12. File Handling</li>
+                <li class="list-group-item">13. Json Handling</li>
+                <li class="list-group-item">14. Fetch API</li>
+                <li class="list-group-item">15. Connect with MYSQL</li>
+                <li class="list-group-item">16. Error Handling</li>
+                <li class="list-group-item">17. Modules.</li>
+                <li class="list-group-item">18. Problem solving & Hands-on mini projects</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border rounded-3 shadow-sm mb-3">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold text-primary bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#react" aria-expanded="false" aria-controls="react">
+              Frontend Development with React
+            </button>
+          </h2>
+          <div id="react" class="accordion-collapse collapse" data-bs-parent="#accordionCourses">
+            <div class="accordion-body">
+              <span class="badge bg-info text-dark me-2"><i class="bi bi-clock-history"></i> Duration: 3-4 Months</span>
+              <span class="badge bg-success"><i class="bi bi-currency-rupee"></i> Fee: ₹6,000</span>
+              <p class="mt-3"> Master <strong>React.js</strong>, <strong>Hooks</strong>, <strong>Routing</strong>, and <strong>API Integration</strong>.
+        Build responsive, modern UI using <strong>Bootstrap</strong> & <strong>Tailwind CSS</strong>.
+        Learn <strong>Git Integration</strong> for version control and collaboration.
+        Finally, get guidance on how to <strong>prepare your CV</strong> for applying to frontend developer roles.
+      </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border rounded-3 shadow-sm mb-3">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold text-primary bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#laravel" aria-expanded="false" aria-controls="laravel">
+              Laravel Developer
+            </button>
+          </h2>
+          <div id="laravel" class="accordion-collapse collapse" data-bs-parent="#accordionCourses">
+            <div class="accordion-body">
+              <span class="badge bg-info text-dark me-2"><i class="bi bi-clock-history"></i> Duration: 3-4 Months</span>
+              <span class="badge bg-success"><i class="bi bi-currency-rupee"></i> Fee: ₹8,000</span>
+              <p class="mt-3">Learn Laravel framework, MVC pattern, Blade templates, authentication, and API development.Learn <strong>Git Integration</strong> for version control and collaboration.
+              Finally, get guidance on how to <strong>prepare your CV</strong> for applying to laravel developer roles.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4 p-3 bg-light rounded-3 text-center">
+        <h5 class="fw-bold text-primary mb-2">Interested in a course? Contact Me:</h5>
+        <p class="mb-1 fs-6">
+          <strong>📞 </strong>
+          <a href="tel:+919875651645" class="text-decoration-none text-dark">+91 9875651645</a>
+        </p>
+      </div>
     </div>
-  </div>
-
-  <div class="course-row d-flex justify-content-between align-items-center border-bottom py-2">
-    <h5 class="fw-semibold mb-0">Full Stack Development with PHP & MySQL</h5>
-    <div class="text-end">
-      <span class="text-dark fw-semibold me-3">₹8,000</span>
-      <span class="text-secondary fw-semibold">4 Months</span>
-    </div>
-  </div>
-
-  <div class="course-row d-flex justify-content-between align-items-center border-bottom py-2">
-    <h5 class="fw-semibold mb-0">Python Programming</h5>
-    <div class="text-end">
-      <span class="text-dark fw-semibold me-3">₹4,000</span>
-      <span class="text-secondary fw-semibold">4 Months</span>
-    </div>
-  </div>
-
-  <div class="course-row d-flex justify-content-between align-items-center border-bottom py-2">
-    <h5 class="fw-semibold mb-0">Frontend Development with React</h5>
-    <div class="text-end">
-      <span class="text-dark fw-semibold me-3">₹6,000</span>
-      <span class="text-secondary fw-semibold">3 Months</span>
-    </div>
-  </div>
-
-  <div class="course-row d-flex justify-content-between align-items-center py-2">
-    <h5 class="fw-semibold mb-0">Laravel Development</h5>
-    <div class="text-end">
-      <span class="text-dark fw-semibold me-3">₹6,000</span>
-      <span class="text-secondary fw-semibold">3 Months</span>
-    </div>
-  </div>
-  <div class="mt-4 p-3 bg-light rounded-3 text-center">
-    <h5 class="fw-bold text-primary mb-2">If learn any course contact me:</h5>
-    <p class="mb-1 fs-6">
-      <strong>📞 </strong> <a href="tel:+919875651645" class="text-decoration-none text-dark">+91 9875651645</a>
-    </p>
-  </div>
-</div>
-    <footer class="mt-5">
+    <footer class="mt-5 text-center text-light small">
       <p class="mb-0">&copy; 2025 Kumarjit Das. All Rights Reserved.</p>
     </footer>
+
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
